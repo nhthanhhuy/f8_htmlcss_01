@@ -65,6 +65,9 @@ a {
 
 .hero-wrap {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #e6f0ff;
     height: calc(100vh - 90px);
 }
