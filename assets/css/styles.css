@@ -335,7 +335,8 @@ a {
 /* Feature list */
 
 .featured .list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 70px;
 }
@@ -628,8 +629,9 @@ a {
 }
 
 .footer .row-top {
-    display: flex;
-    gap: 185px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 185px;
 }
 
 .footer .sub-title {

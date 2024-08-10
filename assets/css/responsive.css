@@ -1,0 +1,239 @@
+/* PC  */
+
+@media screen and (min-width: 992px) {
+    .mobile-header {
+        display: none;
+    }
+
+    .show-on-mobile {
+        display: none;
+    }
+
+    .hide-on-pc {
+        display: none;
+    }
+}
+
+/* Tablet and mobile */
+
+@media screen and (max-width: 991px) {
+    /*  */
+    .navbar ul {
+        position: relative;
+        display: none;
+    }
+
+    /* Logo */
+
+    .navbar .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* Toggle menu */
+
+    .toggle-menu svg {
+        width: 24px;
+        color: #666;
+    }
+
+    /* Menu overlay */
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: ease 0.5s;
+    }
+    .menu-drawer {
+        position: fixed;
+        inset: 0 40% 0 0;
+        padding: 40px;
+        background: #fff;
+        z-index: 2;
+        transition: ease 0.3s;
+        transform: translateX(-100%);
+    }
+
+    .menu-checkbox:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-checkbox:checked ~ .menu-drawer {
+        transform: translateX(0);
+    }
+
+    .menu-drawer ul {
+        margin-top: 30px;
+    }
+
+    .menu-drawer ul a {
+        display: block;
+        padding: 20px 0;
+        color: #666;
+    }
+
+    .seperate {
+        border-top: 1px #ababab solid;
+    }
+
+    .hero--img {
+        display: none;
+    }
+
+    .hero .info {
+        margin: 0 auto;
+        text-align: center;
+        width: 80%;
+    }
+
+    .clients .images {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .guide-list .items {
+        margin: 0;
+        flex: 1;
+    }
+
+    .stats .row {
+        flex-direction: column;
+    }
+
+    .stats .img-block,
+    .stats .info {
+        width: 100%;
+    }
+
+    .stats .info {
+        padding: 0;
+    }
+
+    .stats .info .sub-title {
+        width: 70%;
+    }
+
+    .stats .info .desc {
+        width: 100%;
+    }
+
+    .stats .img-block {
+        margin-top: 20px;
+        order: 2;
+    }
+
+    .stats .content .row-qty {
+        flex-direction: row;
+    }
+
+    .stats .content .row-qty .qty {
+        font-size: 5rem;
+    }
+
+    .stats .content .row-qty .qty-desc {
+        margin-top: 14px;
+        font-size: 1.5rem;
+    }
+
+    .subscription .img-subscription {
+        display: none;
+    }
+
+    .footer .row-top {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 50px;
+    }
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .show-on-mobile {
+        display: none;
+    }
+
+    .featured .list {
+        grid-template-columns: auto auto;
+    }
+
+    .hide-on-tablet {
+        display: none;
+    }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 767px) {
+    .navbar .actions {
+        display: none;
+    }
+
+    .featured .list {
+        grid-template-columns: auto;
+    }
+
+    .hero .title {
+        margin-top: 20px;
+        font-size: 5.5rem;
+    }
+
+    .hero .desc {
+        width: 100%;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .guide-list {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .featured .link {
+        display: none;
+    }
+
+    .stats .info .sub-title {
+        width: 100%;
+    }
+
+    .stats .img-block .image {
+        width: 100%;
+    }
+
+    .stats .img-block .stats-trend {
+        left: 20px;
+    }
+
+    .stats .content .row-qty {
+        flex-direction: column;
+        row-gap: 30px;
+        align-items: center;
+    }
+
+    .subscription .info {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .subscription .info .sub-title {
+        line-height: 1.3;
+    }
+
+    .footer .row-top {
+        column-gap: 30px;
+    }
+
+    .footer .row-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 20px;
+    }
+}
